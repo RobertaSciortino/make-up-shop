@@ -9,4 +9,15 @@ header {
         border: none;
     }
 
+    .menu,
+    ul li ul li {
+        display: inline-block;
+    }
+
+    .menu ul li h2:hover,
+    .menu ul li h4:hover {
+        color: #9D1E9E;
+        cursor: pointer;
+    }
+
 }

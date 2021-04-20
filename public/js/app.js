@@ -49659,9 +49659,50 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#root",
   data: {
-    products: []
+    products: [],
+    visibility: 'hidden',
+    faceSectionVisibility: 'hidden',
+    eyesSectionVisibility: 'hidden',
+    lipsSectionVisibility: 'hidden',
+    nailsSectionVisibility: 'hidden'
   },
-  methods: {},
+  methods: {
+    toggleMenu: function toggleMenu() {
+      if (this.visibility === 'hidden') {
+        this.visibility = 'visible';
+      } else {
+        this.visibility = 'hidden';
+      }
+    },
+    faceMenu: function faceMenu() {
+      if (this.faceSectionVisibility === 'hidden') {
+        this.faceSectionVisibility = 'visible';
+      } else {
+        this.faceSectionVisibility = 'hidden';
+      }
+    },
+    eyesMenu: function eyesMenu() {
+      if (this.eyesSectionVisibility === 'hidden') {
+        this.eyesSectionVisibility = 'visible';
+      } else {
+        this.eyesSectionVisibility = 'hidden';
+      }
+    },
+    lipsMenu: function lipsMenu() {
+      if (this.lipsSectionVisibility === 'hidden') {
+        this.lipsSectionVisibility = 'visible';
+      } else {
+        this.lipsSectionVisibility = 'hidden';
+      }
+    },
+    nailsMenu: function nailsMenu() {
+      if (this.nailsSectionVisibility === 'hidden') {
+        this.nailsSectionVisibility = 'visible';
+      } else {
+        this.nailsSectionVisibility = 'hidden';
+      }
+    }
+  },
   mounted: function mounted() {
     var _this = this;
 

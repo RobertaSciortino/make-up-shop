@@ -17086,6 +17086,34 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  color: #f8f9fa;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
 header {
   width: 100%;
   height: 90vh;
@@ -17098,12 +17126,15 @@ header .navbar-dark .navbar-toggler {
   border: none;
 }
 
-header .none {
-  display: none;
+header .menu,
+header ul li ul li {
+  display: inline-block;
 }
 
-header .block {
-  display: block;
+header .menu ul li h2:hover,
+header .menu ul li h4:hover {
+  color: #9D1E9E;
+  cursor: pointer;
 }
 
 main {

@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visible {
+    color: $light;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
